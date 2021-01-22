@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # bootstrap/python
 #
 # Python-finding script for all `sh` environments, including Linux, MSYS2,
@@ -18,7 +18,7 @@ if [ "$TG_BOOTSTRAP_CACHE" ]; then
 fi
 OldPWD="$PWD"
 cd "$Bootstrap/../.."
-source ./buildByond.conf # sets PYTHON_VERSION
+. ./buildByond.conf  # sets PYTHON_VERSION
 cd "$OldPWD"
 PythonVersion="$PYTHON_VERSION"
 PythonDir="$Cache/python-$PythonVersion"
