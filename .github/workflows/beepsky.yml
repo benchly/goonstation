@@ -23,9 +23,6 @@ jobs:
           key: ${{ runner.os }}-dreamchecker-${{ hashFiles('buildByond.conf')}}
           restore-keys: ${{ runner.os }}-dreamchecker
 
-      - name: Setup Python
-        uses: actions/setup-python@v2
-
       - name: Setup Rust
         uses: hecrj/setup-rust-action@v1.3.3
 
