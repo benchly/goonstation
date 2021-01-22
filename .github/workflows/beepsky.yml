@@ -33,7 +33,7 @@ jobs:
         run: |
           tools/ci/install_build_tools.sh
           tools/ci/install_spaceman_dmm.sh dreamchecker
-          pip3 install -r tools/requirements.txt
+          tools/bootstrap/python -c ''
           touch +secret/__secret.dme
 
       - name: Misc Checks
@@ -194,7 +194,7 @@ jobs:
         run: |
           tools/ci/install_build_tools.sh
           tools/ci/install_spaceman_dmm.sh dreamchecker
-          pip3 install -r tools/requirements.txt
+          tools/bootstrap/python -c ''
           touch +secret/__secret.dme
 
       - name: Misc Checks
